@@ -32,18 +32,37 @@ body {
    text-align: center;
    background: #f7f7f7;
    border: 1px solid aquamarine;
+   cursor: pointer;
 }
 
 .app-wrapper .selected {
-   background: yellow;
+   background: orange;
 }
 
 .app-wrapper button {
    margin: 30px 0;
    font-size: 15px;
    padding: 10px 40px;
+   cursor: pointer;
 }
 
 .app-wrapper .end-of-game {
    color: #fff
+}
+
+@media(max-width: 1000px) {
+   .app-wrapper {
+      width: 90%;
+      transform: translate(-50%, -60%);
+   }
+   .app-wrapper .question {
+      font-size: 17px;
+   }
+   .app-wrapper .options {
+      height: 24px;
+      line-height: 1.5;
+   }
+   .app-wrapper button {
+      margin: 22px 0;
+   }
 }
