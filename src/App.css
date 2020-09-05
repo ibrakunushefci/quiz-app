@@ -50,6 +50,15 @@ body {
    color: #fff
 }
 
+.about {
+   position: absolute;
+   right: 10px;
+   bottom: 10px;
+   color: #fff;
+   font-size: 12px;
+   text-align: end;
+}
+
 @media(max-width: 1000px) {
    .app-wrapper {
       width: 90%;
@@ -64,5 +73,8 @@ body {
    }
    .app-wrapper button {
       margin: 22px 0;
+   }
+   .about {
+      font-size: 10px
    }
 }

@@ -120,12 +120,14 @@ class App extends React.Component {
                      : ''
                   }
                   <p>Your score is: {score} of {questions.length}</p>
+
+                  <button onClick={() => window.location.reload()}>Restart</button>
                </div>
             </div>
          )
       } else {
          return (
-            <div className="app-wrapper">
+            <><div className="app-wrapper">
                <h6 className="question">Question {currentQuestion + 1} of {questions.length}</h6>
                <h2 className="question">{decodeString(question)}</h2>
                
@@ -143,6 +145,8 @@ class App extends React.Component {
                   <button onClick={this.handleFinish}>Finish</button>
                )}
             </div>
+
+            <span className="about">All the questions are provided by the Open Trivia DB. <br/>Each time you play the game, you will get different random questions</span></>
          )
       }
    }
